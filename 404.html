@@ -1,10 +1,15 @@
 <script type="text/javascript">
+var key = window.location.href.split('/')[1]
 var urls={
     'carp':'http://www.carpentersblocks.com/downloads.html',
 }
-    if(urls){
+if(key){
+    if(urls[key]){
         window.location.href=urls[key]
+    }else{
+        document.write("'"+key+"' nao foi encontrado :(");
     }
+}
 </script>
 <script type="text/javascript">
 setTimeout(function () {
