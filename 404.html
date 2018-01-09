@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Redirecting...</title>
-</head>
-
-<body>
-Redirecting...
-<script type="text/javascript">
-    window.location = "//www.minejogo.com.br";
-  </script>
-</body>
-
-</html>
+<script>
+var key = window.location.href.split("go/")[1].replace("/","")
+var urls={
+    'test':'http://google.com.br/',
+}
+if(key){
+    if(urls[key]){
+        window.location.href=urls[key]
+    }else{
+        document.write("'"+key+"' not found :(");
+    }
+}
+</script>
