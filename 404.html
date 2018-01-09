@@ -1,29 +1,11 @@
-<script>
-var key = window.location.href.split("?/")[1].replace("/","")
+<script type="text/javascript">
 var urls={
-    'UkGmebxagj':'http://www.carpentersblocks.com/downloads.html',
+    'carp':'http://www.carpentersblocks.com/downloads.html',
 }
-if(key){
-    if(urls[key]){
+    if(urls){
         window.location.href=urls[key]
-    }else{
-        document.write("'"+key+"' nao foi encontrado :(");
     }
-}
-
-var key = window.location.href.split("map/")[2].replace("/","")
-var urls={
-    'official':'http://mapas.minejogo.com.br/',
-}
-if(key){
-    if(urls[key]){
-        window.location.href=urls[key]
-    }else{
-        document.write("'"+key+"' nao foi encontrado :(");
-    }
-}
 </script>
-
 <script type="text/javascript">
 setTimeout(function () {
    window.location.href = "http://www.minejogo.com.br/";
