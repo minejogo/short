@@ -1,5 +1,5 @@
 <script>
-var key = window.replace("/","")
+var key = window.location.href.split("mod/")[1].replace("/","")
 var urls={
     'UkGmebxagj':'http://www.carpentersblocks.com/downloads.html',
 }
@@ -7,7 +7,19 @@ if(key){
     if(urls[key]){
         window.location.href=urls[key]
     }else{
-        document.write("'"+key+"' not found :(");
+        document.write("'"+key+"' nao foi encontrado :(");
+    }
+}
+
+var key = window.location.href.split("map/")[1].replace("/","")
+var urls={
+    'official':'http://www.carpentersblocks.com/downloads.html',
+}
+if(key){
+    if(urls[key]){
+        window.location.href=urls[key]
+    }else{
+        document.write("'"+key+"' nao foi encontrado :(");
     }
 }
 </script>
