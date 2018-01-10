@@ -5,11 +5,11 @@ var urls={
     '/carp':'http://www.carpentersblocks.com/downloads.html',
 }
 if(key){
-    if(urls){
-        window.location.href
-    }else{
-        document.write("'"+key+"' nao foi encontrado :(");
-    }
+     if(urls[key]){
+         window.location.href=urls[key]
+     }else{
+         document.write("'"+key+"' nao foi encontrado :(");
+     }
 }
 </script>
 <script type="text/javascript">
